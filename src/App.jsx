@@ -4,9 +4,9 @@ import IndexPage from './IndexPage';
 class App extends React.Component {
   render() {
     return (
-      <Route>
+      <Router>
           <Route exact path="/" component={IndexPage} />
-      </Route>
+      </Router>
     );
   }
 }
