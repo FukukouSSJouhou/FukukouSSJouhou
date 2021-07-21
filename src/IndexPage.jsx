@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
 import {Container,Row,Col,footer} from 'react-bootstrap';
+import {RevealGlobalStyles} from 'react-genie'
 class IndexPage extends React.Component {
     render() {
         return (
