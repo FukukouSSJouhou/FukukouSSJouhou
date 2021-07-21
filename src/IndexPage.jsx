@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './components/Header';
-import {Container,Row,Col,footer} from 'react-bootstrap';
-import {RevealGlobalStyles} from 'react-genie'
+import {Container,Row,Col,footer,Card} from 'react-bootstrap';
+import {RevealGlobalStyles,Reveal} from 'react-genie'
 class IndexPage extends React.Component {
     render() {
         return (
@@ -24,11 +24,9 @@ class IndexPage extends React.Component {
                         line-height:13vw;
                         font-size:4.1vw;
                     }
-                    .midasikun{
-                        font-size:4.9vw;
-                    }
                     body{
-                        background-color:#f0f2f5;                   
+                        background-color:#f0f2f5;
+                        min-height:100%;                   
                     }
                     .infokun{
                         margin-top:4vw;
@@ -40,6 +38,39 @@ class IndexPage extends React.Component {
                         background-color:#343434;
                         color:#fff;
                     }
+                    .midasirow{
+                        margin-top:6vw;
+                    }
+                    #ofkun{
+                        margin-top:3vw;
+                        text-align:center;
+                    }
+                    @media screen and (max-width: 640px) {
+                        
+                    .headercont{
+                        height:26vw;
+                        width:100%;
+                        overflow:hidden;
+                        background-color:#434343;
+                    }
+                    #header_center{
+                        color:white;
+                        text-align:center;
+                        line-height:26vw;
+                        font-size:10vw;
+                    }
+                    #ofkun{
+                        margin-top:6vw;
+                        text-align:center;
+                        margin-bottom:6vw;
+                    }
+                    .midasikun{
+                        font-size:12vw;
+                    }
+                    .infokun{
+                        font-size:4vw;
+                    }
+                    }
                     `
                 }
             </style>
@@ -49,29 +80,75 @@ class IndexPage extends React.Component {
                     <h1 id="header_center">福島高校SS部情報班</h1>
                 </Container>
                 <Container>
-                    <Row>
+                    <Reveal>
+                        <Row>
+                            <h1 id="ofkun">情報班公式サイトへ<br />ようこそ!</h1>
+                        </Row>
+                    </Reveal>
+                </Container>
+                <Container>
+                    <Reveal>
+                    <Row className="midasirow">
+                        
+                        <Col >
+                        <h1 className="midasikun">Introduce</h1>
+                        </Col>
+                    </Row>
+                    </Reveal>
+                    <Reveal>
+                        <Row>
+                            <Col className="infokun">
+                                福島高校SS部情報班は、プログラミングを主体とするクリエイティブな班です。<br/>
+                                初心者、上級者も大歓迎!!
+                            </Col>
+                        </Row>
+                    </Reveal>
+                    <Reveal>
+                    <Row className="midasirow">
                         
                         <Col>
-                        <div className="midasikun">Introduce</div>
+                        <h1 className="midasikun">How to meet us?</h1>
                         </Col>
                     </Row>
+                    </Reveal>
+                    <Reveal>
                     <Row>
                         <Col className="infokun">
-                         <h2>福島高校SS部情報班は、プログラミングを主体とするクリエイティブな班です。</h2>
-                         <h2>初心者、上級者も大歓迎!!</h2>
+                         基本的にタブレットPC室で活動しています。班員に積極的に話しかけましょう!
                         </Col>
                     </Row>
-                    <Row>
+                    </Reveal>
+                    <Reveal>
+                    <Row className="midasirow">
                         
                         <Col>
-                        <div className="midasikun">How to meet us?</div>
+                        <h1 className="midasikun">活動内容</h1>
                         </Col>
                     </Row>
+                    </Reveal>
+                    <Reveal>
                     <Row>
                         <Col className="infokun">
-                         <h2>基本的にタブレットPC室で活動しています。班員に積極的に話しかけましょう!</h2>
+                            アプリケーションなどを開発しています。
                         </Col>
                     </Row>
+                    </Reveal>
+                    <Reveal>
+                    <Row className="midasirow">
+                        
+                        <Col>
+                        <h1 className="midasikun">成果物</h1>
+                        </Col>
+                    </Row>
+                    </Reveal>
+                    <Reveal>
+                    <Row>
+                        <Col className="infokun">
+                            アプリケーションなどを開発しています。<br />
+                            近いうちリリースするかもしれません。
+                        </Col>
+                    </Row>
+                    </Reveal>
                 </Container>
                 <footer className="footerkun">©2021 Fukushima High School SS Club Jouhouhan</footer>
             </>
