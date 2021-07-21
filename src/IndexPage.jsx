@@ -44,6 +44,7 @@ class IndexPage extends React.Component {
                 }
             </style>
                 <Header />
+                <RevealGlobalStyles />
                 <Container fluid className="headercont">
                     <h1 id="header_center">福島高校SS部情報班</h1>
                 </Container>
