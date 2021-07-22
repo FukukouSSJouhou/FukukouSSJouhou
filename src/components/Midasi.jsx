@@ -10,7 +10,7 @@ class Midasi extends React.Component{
             <Reveal>
                 <Row className="midasirow">
                     <Col >
-                        <h1 className="midasikun">{this.props.children}</h1>
+                        <u><h1 className="midasikun">{this.props.children}</h1></u>
                         </Col>
                     </Row>
             </Reveal>
