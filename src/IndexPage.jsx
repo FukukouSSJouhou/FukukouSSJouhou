@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import {Container,Row,Col,footer,Card} from 'react-bootstrap';
 import {RevealGlobalStyles,Reveal} from 'react-genie'
+import Midasi from "./components/Midasi";
 class IndexPage extends React.Component {
     render() {
         return (
@@ -87,14 +88,9 @@ class IndexPage extends React.Component {
                     </Reveal>
                 </Container>
                 <Container>
-                    <Reveal>
-                    <Row className="midasirow">
-                        
-                        <Col >
-                        <h1 className="midasikun">Introduce</h1>
-                        </Col>
-                    </Row>
-                    </Reveal>
+                    <Midasi>
+                        Introduce
+                    </Midasi>
                     <Reveal>
                         <Row>
                             <Col className="infokun">
@@ -103,14 +99,9 @@ class IndexPage extends React.Component {
                             </Col>
                         </Row>
                     </Reveal>
-                    <Reveal>
-                    <Row className="midasirow">
-                        
-                        <Col>
-                        <h1 className="midasikun">How to meet us?</h1>
-                        </Col>
-                    </Row>
-                    </Reveal>
+                    <Midasi>
+                        How to meet us?
+                    </Midasi>
                     <Reveal>
                     <Row>
                         <Col className="infokun">
@@ -118,14 +109,9 @@ class IndexPage extends React.Component {
                         </Col>
                     </Row>
                     </Reveal>
-                    <Reveal>
-                    <Row className="midasirow">
-                        
-                        <Col>
-                        <h1 className="midasikun">活動内容</h1>
-                        </Col>
-                    </Row>
-                    </Reveal>
+                    <Midasi>
+                        活動内容
+                    </Midasi>
                     <Reveal>
                     <Row>
                         <Col className="infokun">
@@ -133,14 +119,9 @@ class IndexPage extends React.Component {
                         </Col>
                     </Row>
                     </Reveal>
-                    <Reveal>
-                    <Row className="midasirow">
-                        
-                        <Col>
-                        <h1 className="midasikun">成果物</h1>
-                        </Col>
-                    </Row>
-                    </Reveal>
+                    <Midasi>
+                        成果物
+                    </Midasi>
                     <Reveal>
                     <Row>
                         <Col className="infokun">
