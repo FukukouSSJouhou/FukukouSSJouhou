@@ -1,0 +1,9 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.PLAMAR2",
+      "sha256_cert_fingerprints":
+      ["97:F4:E5:2E:C4:32:85:2E:F5:40:B6:00:0C:98:44:42:65:D2:8E:98:98:E7:A6:CC:C3:F2:CC:D5:43:16:A3:EC"]
+    }
+}]
