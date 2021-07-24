@@ -8,7 +8,7 @@ class Routerkun extends React.Component{
             <BrowserRouter>
                 <Switch>
                     <Route exact path={"/"} component={IndexPage} />
-                    <Route path={"/Apps"} component={AppPage} />
+                    <Route path={"/Apps.html"} component={AppPage} />
                 </Switch>
             </BrowserRouter>
         );
