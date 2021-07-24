@@ -113,10 +113,11 @@ class AppPage extends React.Component{
                         </Row>
                     </Reveal>
                 </Container>
+                
+                            
+                <Reveal>
                 <Container className="Contkun">
                         <CardGroup>
-                            
-                            <Reveal>
                                 <Card className="Cardkun111">
                                     <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
                                     <Card.Body>
@@ -128,7 +129,6 @@ class AppPage extends React.Component{
                                         <Button variant="primary" href="/umenavi_web" target="_blank">Let's go!</Button>
                                     </Card.Body>
                                 </Card>
-                            </Reveal>
                         {/*
                         <Card className="Cardkun111">
                             <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
@@ -142,7 +142,7 @@ class AppPage extends React.Component{
                             </Card.Body>
                         </Card>
                         */}
-                            <Reveal>
+
                                 <Card className="Cardkun111">
                                     <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
                                     <Card.Body>
@@ -151,9 +151,11 @@ class AppPage extends React.Component{
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
-                            </Reveal>
                         </CardGroup>
+                        
                 </Container>
+                
+                </Reveal>
                 <footer className="footerkun">©2021 Fukushima High School SS Club Jouhouhan</footer>
             </>
         )
