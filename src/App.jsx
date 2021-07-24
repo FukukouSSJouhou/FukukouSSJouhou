@@ -7,7 +7,7 @@ class App extends React.Component {
     return (
       <Router>
           <Route exact path="/" component={IndexPage} />
-          <Route exact path="/Apps" component={AppPage} />
+          <Route path="/Apps" component={AppPage} />
       </Router>
     );
   }
