@@ -5,12 +5,11 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 class Routerkun extends React.Component{
     render(){
         return(
-            <BrowserRouter>
-                <Switch>
-                    <Route exact path={"/"} component={IndexPage} />
-                    <Route path={"/Apps.html"} component={AppPage} />
-                </Switch>
-            </BrowserRouter>
+            <Router>
+                <Route exact path={"/"} component={IndexPage} />
+                <Route exact path={"/index.html"} component={IndexPage} />
+                <Route path={"/Apps.html"} component={AppPage} />
+            </Router>
         );
     }
 }
