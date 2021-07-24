@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fukushima High School  SS Jouhouhan</title>
+    </head>
+    <body>
+        <script>
+            const pathLS=window.location.pathname.split('/');
+            const url=`${window.location.origin}/${pathLS[1]}/`;
+            pathLS.splice(0,2);
+            const QValue=pathLS.map(item => `/${item}`).join('');
+            window.location.replace(`${url}?origp=${QValue}`);
+        </script>
+    </body>
+</html>
