@@ -31,6 +31,7 @@ class Header extends React.Component{
                                 <Nav.Item as="li">
                                     <Button id="firstlinkbt" href="/Info.html" className="nav_link" activeClassName="active">Info</Button>
                                     <Button href="/Apps.html" className="nav_link normallinkbt"  activeClassName="active">Applications</Button>
+                                    <Button href="/SNS.html" className="nav_link normallinkbt"  activeClassName="active">SNS</Button>
                                 </Nav.Item>
                             </Nav>
                         </Navbar.Collapse>

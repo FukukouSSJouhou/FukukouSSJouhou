@@ -3,7 +3,10 @@ import Header from '../components/Header';
 import {Container,Row,Col,footer,Card,Button,CardGroup} from 'react-bootstrap';
 import {RevealGlobalStyles,Reveal} from 'react-genie'
 import Midasi from "../components/Midasi";
-import umenaviImage from "../images/iconumenavi.svg"
+import umenaviImage from "../images/iconumenavi.svg";
+import twimage from "../images/twitter.svg";
+import ghimage from "../images/github.svg";
+import igimage from "../images/instagram.svg";
 class SNSPages extends React.Component{
     constructor(props){
         super(props);
@@ -57,6 +60,8 @@ class SNSPages extends React.Component{
                     }
                     .imgkunCard{
                         width:15vw;
+                        height:190px;
+                        overflow:hidden;
                     }
                     .Cardkun111{
                         width:35%;
@@ -109,7 +114,7 @@ class SNSPages extends React.Component{
                 <Container>
                     <Reveal>
                         <Row>
-                            <h1 id="ofkun">SNSアカウント一覧</h1>
+                            <h1 id="ofkun">SNS等アカウント一覧</h1>
                         </Row>
                     </Reveal>
                 </Container>
@@ -119,7 +124,7 @@ class SNSPages extends React.Component{
                 <Container className="Contkun">
                         <CardGroup>
                                 <Card className="Cardkun111">
-                                    <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
+                                    <Card.Img className="imgkunCard" variant="top" src={twimage} style={{overflow:"hidden"}}/>
                                     <Card.Body>
                                         <Card.Title >Twitter</Card.Title>
                                         <Card.Text>
@@ -145,10 +150,56 @@ class SNSPages extends React.Component{
                         */}
 
                                 <Card className="Cardkun111">
+                                    <Card.Img className="imgkunCard" variant="top" src={ghimage} style={{overflow:"hidden"}}/>
+                                    <Card.Body>
+                                        <Card.Title >GitHub</Card.Title>
+                                        <Card.Text>情報班公式Githubアカウントです。
+                                            <br/>
+                                            フォローすると班員が喜びます。
+                                        </Card.Text>
+                                        <Button variant="primary" href="https://github.com/fukukouSSJouhou/" target="_blank">GitHub</Button>
+
+                                    </Card.Body>
+                                </Card>
+                        </CardGroup>
+                        
+                </Container>
+                
+                </Reveal>                <Reveal>
+                <Container className="Contkun">
+                        <CardGroup>
+                                <Card className="Cardkun111">
+                                    <Card.Img className="imgkunCard" variant="top" src={igimage} style={{overflow:"hidden"}}/>
+                                    <Card.Body>
+                                        <Card.Title >Instagram</Card.Title>
+                                        <Card.Text>
+                                            情報班公式Instagramアカウントです。
+                                            <br/>
+                                            フォローすると班員が喜びます。
+                                        </Card.Text>
+                                        <Button variant="primary" href="https://www.instagram.com/fukukoussjouhou/" target="_blank">Instagram</Button>
+                                    </Card.Body>
+                                </Card>
+                        {/*
+                        <Card className="Cardkun111">
+                            <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
+                            <Card.Body>
+                                <Card.Title >PLAMAR</Card.Title>
+                                <Card.Text>
+                                    文化祭で使う予定のアプリケーションです。<br />
+                                    Webベースであり、インストール不要で使うことができます。
+                                </Card.Text>
+                                <Button variant="primary">Let's go!</Button>
+                            </Card.Body>
+                        </Card>
+                        */}
+
+                                <Card className="Cardkun111">
                                     <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
                                     <Card.Body>
                                         <Card.Title >準備中</Card.Title>
                                         <Card.Text>準備中...
+                                            <br />何かがあらわれるかもしれない.....
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
