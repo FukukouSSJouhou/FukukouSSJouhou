@@ -59,6 +59,7 @@ module.exports = {
   appHtml: resolveApp('public/index.html'),
   appHtmlApps: resolveApp('public/Apps.html'),
   appHtmlNOTFOUND: resolveApp('public/404.html'),
+  appHtmlSNS: resolveApp('public/SNS.html'),
   appIndexJs: resolveModule(resolveApp, 'src/index'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
