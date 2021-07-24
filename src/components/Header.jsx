@@ -29,8 +29,8 @@ class Header extends React.Component{
                         <Navbar.Collapse id="navbarResponsive">
                             <Nav as="ul" className="al_auto">
                                 <Nav.Item as="li">
-                                    <Button id="firstlinkbt" href="/Info" className="nav_link" activeClassName="active">Info</Button>
-                                    <Button href="/Apps" className="nav_link normallinkbt"  activeClassName="active">Applications</Button>
+                                    <Button id="firstlinkbt" href="/Info.html" className="nav_link" activeClassName="active">Info</Button>
+                                    <Button href="/Apps.html" className="nav_link normallinkbt"  activeClassName="active">Applications</Button>
                                 </Nav.Item>
                             </Nav>
                         </Navbar.Collapse>
