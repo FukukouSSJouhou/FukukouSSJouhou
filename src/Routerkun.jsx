@@ -6,9 +6,10 @@ class Routerkun extends React.Component{
     render(){
         return(
             <BrowserRouter >
-                <Route exact path={"/"} component={IndexPage} />
-                <Route exact path={"/index.html"} component={IndexPage} />
-                <Route path={"/Apps.html"} component={AppPage} />
+                <Switch>
+                    <Route exact path={"/"} component={IndexPage} />
+                    <Route path={"/Apps.html"} component={AppPage} />
+                </Switch>
             </BrowserRouter >
         );
     }
