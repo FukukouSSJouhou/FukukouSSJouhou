@@ -118,6 +118,7 @@ class AppPage extends React.Component{
                 <Reveal>
                 <Container className="Contkun">
                         <CardGroup>
+                                {/*
                                 <Card className="Cardkun111">
                                     <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
                                     <Card.Body>
@@ -129,20 +130,15 @@ class AppPage extends React.Component{
                                         <Button variant="primary" href="/umenavi_web" target="_blank">Let's go!</Button>
                                     </Card.Body>
                                 </Card>
-                        {/*
-                        <Card className="Cardkun111">
-                            <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
-                            <Card.Body>
-                                <Card.Title >PLAMAR</Card.Title>
-                                <Card.Text>
-                                    文化祭で使う予定のアプリケーションです。<br />
-                                    Webベースであり、インストール不要で使うことができます。
-                                </Card.Text>
-                                <Button variant="primary">Let's go!</Button>
-                            </Card.Body>
-                        </Card>
-                        */}
-
+                                */}
+                                <Card className="Cardkun111">
+                                    <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
+                                    <Card.Body>
+                                        <Card.Title >準備中</Card.Title>
+                                        <Card.Text>準備中...
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
                                 <Card className="Cardkun111">
                                     <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
                                     <Card.Body>
