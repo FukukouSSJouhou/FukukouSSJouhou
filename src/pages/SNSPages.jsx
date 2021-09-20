@@ -5,6 +5,7 @@ import {RevealGlobalStyles,Reveal} from 'react-genie'
 import Midasi from "../components/Midasi";
 import umenaviImage from "../images/iconumenavi.svg";
 import twimage from "../images/twitter.svg";
+import youtubeimage from "../images/youtube.svg";
 import ghimage from "../images/github.svg";
 import igimage from "../images/instagram.svg";
 class SNSPages extends React.Component{
@@ -195,12 +196,15 @@ class SNSPages extends React.Component{
                         */}
 
                                 <Card className="Cardkun111">
-                                    <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
+                                    <Card.Img className="imgkunCard" variant="top" src={youtubeimage} />
                                     <Card.Body>
-                                        <Card.Title >準備中</Card.Title>
-                                        <Card.Text>準備中...
-                                            <br />何かがあらわれるかもしれない.....
+                                        <Card.Title >Youtube</Card.Title>
+                                        <Card.Text>
+                                            情報班公式Youtubeアカウントです。
+                                            <br/>
+                                            チャンネル登録お願いします
                                         </Card.Text>
+                                        <Button variant="primary" href="https://www.youtube.com/channel/UCHUaKGif9GiPpFU90miQ8dg" target="_blank">Youtube</Button>
                                     </Card.Body>
                                 </Card>
                         </CardGroup>
