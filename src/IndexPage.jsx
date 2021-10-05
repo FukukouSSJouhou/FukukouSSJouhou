@@ -120,6 +120,17 @@ class IndexPage extends React.Component {
                     </Row>
                     </Reveal>
                     <Midasi>
+                        大会実績等
+                    </Midasi>
+                    <Reveal>
+                    <Row>
+                        <Col className="infokun">
+                            パソコン甲子園2021の本選出場、<br />
+                            新人賞の獲得
+                        </Col>
+                    </Row>
+                    </Reveal>
+                    <Midasi>
                         成果物
                     </Midasi>
                     <Reveal>
