@@ -4,6 +4,7 @@ import {Container,Row,Col,footer,Card,Button,CardGroup} from 'react-bootstrap';
 import {RevealGlobalStyles,Reveal} from 'react-genie'
 import Midasi from "../components/Midasi";
 import umenaviImage from "../images/iconumenavi.svg"
+import plamarImage from  "../images/plamar.png"
 class AppPage extends React.Component{
     constructor(props){
         super(props);
@@ -132,11 +133,12 @@ class AppPage extends React.Component{
                                 </Card>
                                 */}
                                 <Card className="Cardkun111">
-                                    <Card.Img className="imgkunCard" variant="top" src={umenaviImage} style={{overflow:"hidden"}}/>
+                                    <Card.Img className="imgkunCard" variant="top" src={plamarImage} style={{overflow:"hidden"}}/>
                                     <Card.Body>
-                                        <Card.Title >準備中</Card.Title>
-                                        <Card.Text>準備中...
+                                        <Card.Title >PLAMAR</Card.Title>
+                                        <Card.Text>福島高校校舎の3DマップをAR表示したりするアプリです。<br />
                                         </Card.Text>
+                                        <Button variant="primary" href="https://play.google.com/store/apps/details?id=com.PLAMAR2" target="_blank">Play Store</Button>
                                     </Card.Body>
                                 </Card>
                                 <Card className="Cardkun111">
