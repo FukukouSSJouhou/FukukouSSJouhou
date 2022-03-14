@@ -116,18 +116,12 @@ class IndexPage extends React.Component {
                         <Row>
                             <Col className="infokun">
                                 現在
-                                <br />
-                                <br />
-                                <br />
                                 <ul>
                                     <li>AI班</li>
                                     <li>AR班</li>
                                     <li>図書館班</li>
                                     <li>ドローン班</li>
                                 </ul>
-                                <br/>
-                                <br/>
-                                <br/>
                                 の4班が存在します。
                             </Col>
                         </Row>

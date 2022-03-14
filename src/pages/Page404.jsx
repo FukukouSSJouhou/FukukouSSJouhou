@@ -19,6 +19,11 @@ class Page404 extends React.Component{
                         text-align:center;
                         margin-top:6vw;
                     }
+                    .PNFs{
+                        font-size:1.5vw;
+                        text-align:center;
+                        margin-top:2vw;
+                    }
                     .NFM{
                         visibility:hidden;
                     }
@@ -40,7 +45,9 @@ class Page404 extends React.Component{
                 <div className="NF">404 NOT FOUND!</div>
                 <div className="NFM">404 <br />NOT <br /> FOUND!</div>
                 <div className="PNF">お探しのページは見つかりませんでした!(^^)!</div>
+                <div className="PNFs">お菓子が欲しいです(´・ω・) by 管理人</div>
                 </Reveal>
+                
             </>
         );
     }
