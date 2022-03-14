@@ -119,12 +119,12 @@ class IndexPage extends React.Component {
                                 <br />
                                 <br />
                                 <br />
-                                <ListGroup>
-                                    <ListGroup.Item>AI班</ListGroup.Item>
-                                    <ListGroup.Item>AR班</ListGroup.Item>
-                                    <ListGroup.Item>図書館班</ListGroup.Item>
-                                    <ListGroup.Item>ドローン班</ListGroup.Item>
-                                </ListGroup>
+                                <ul>
+                                    <li>AI班</li>
+                                    <li>AR班</li>
+                                    <li>図書館班</li>
+                                    <li>ドローン班</li>
+                                </ul>
                                 <br/>
                                 <br/>
                                 <br/>
