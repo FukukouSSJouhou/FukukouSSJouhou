@@ -25,7 +25,6 @@ class Header extends React.Component{
                 <Container>
                     <Navbar expand="md" variant="dark">
                         <Navbar.Brand href="/">福島高校SS部情報班</Navbar.Brand>
-                        <img src="http://www.rays-counter.com/d498_f6_022/61cc74e188b2c/" />
                         <Navbar.Toggle aria-controls="navbarResponsive" />
                         <Navbar.Collapse id="navbarResponsive">
                             <Nav as="ul" className="al_auto">
