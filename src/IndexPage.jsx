@@ -1,15 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
-import {Container,Row,Col,footer,Card} from 'react-bootstrap';
-import {RevealGlobalStyles,Reveal} from 'react-genie'
+import { Container, Row, Col, footer, Card ,ListGroup} from 'react-bootstrap';
+import { RevealGlobalStyles, Reveal } from 'react-genie'
 import Midasi from "./components/Midasi";
 class IndexPage extends React.Component {
     render() {
         return (
             <>
-            <style type="text/css">
-                {
-                    `
+                <style type="text/css">
+                    {
+                        `
                     .headercont{
                         height:13vw;
                         width:100%;
@@ -73,8 +73,8 @@ class IndexPage extends React.Component {
                     }
                     }
                     `
-                }
-            </style>
+                    }
+                </style>
                 <Header />
                 <RevealGlobalStyles />
                 <Container fluid className="headercont">
@@ -94,7 +94,7 @@ class IndexPage extends React.Component {
                     <Reveal>
                         <Row>
                             <Col className="infokun">
-                                福島高校SS部情報班は、プログラミングを主体とするクリエイティブな班です。<br/>
+                                福島高校SS部情報班は、プログラミングを主体とするクリエイティブな班です。<br />
                                 初心者、上級者も大歓迎!!
                             </Col>
                         </Row>
@@ -103,43 +103,66 @@ class IndexPage extends React.Component {
                         How to meet us?
                     </Midasi>
                     <Reveal>
-                    <Row>
-                        <Col className="infokun">
-                         基本的にタブレットPC室で活動しています。班員に積極的に話しかけましょう!
-                        </Col>
-                    </Row>
+                        <Row>
+                            <Col className="infokun">
+                                基本的にタブレットPC室で活動しています。班員に積極的に話しかけましょう!
+                            </Col>
+                        </Row>
+                    </Reveal>
+                    <Midasi>
+                        班一覧
+                    </Midasi>
+                    <Reveal>
+                        <Row>
+                            <Col className="infokun">
+                                現在
+                                <br />
+                                <br />
+                                <br />
+                                <ListGroup>
+                                    <ListGroup.Item>AI班</ListGroup.Item>
+                                    <ListGroup.Item>AR班</ListGroup.Item>
+                                    <ListGroup.Item>図書館班</ListGroup.Item>
+                                    <ListGroup.Item>ドローン班</ListGroup.Item>
+                                </ListGroup>
+                                <br/>
+                                <br/>
+                                <br/>
+                                の4班が存在します。
+                            </Col>
+                        </Row>
                     </Reveal>
                     <Midasi>
                         活動内容
                     </Midasi>
                     <Reveal>
-                    <Row>
-                        <Col className="infokun">
-                            アプリケーションなどを開発しています。
-                        </Col>
-                    </Row>
+                        <Row>
+                            <Col className="infokun">
+                                アプリケーションや図書館ロボットなどを開発しています。
+                            </Col>
+                        </Row>
                     </Reveal>
                     <Midasi>
                         大会実績等
                     </Midasi>
                     <Reveal>
-                    <Row>
-                        <Col className="infokun">
-                            パソコン甲子園2021の本選出場、<br />
-                            新人賞の獲得
-                        </Col>
-                    </Row>
+                        <Row>
+                            <Col className="infokun">
+                                パソコン甲子園2021の本選出場、<br />
+                                新人賞の獲得
+                            </Col>
+                        </Row>
                     </Reveal>
                     <Midasi>
                         成果物
                     </Midasi>
                     <Reveal>
-                    <Row>
-                        <Col className="infokun">
-                            アプリケーションなどを開発しています。<br />
-                            近いうちリリースするかもしれません。
-                        </Col>
-                    </Row>
+                        <Row>
+                            <Col className="infokun">
+                                アプリケーションなどを開発しています。<br />
+                                図書館ロボットも作っています。
+                            </Col>
+                        </Row>
                     </Reveal>
                 </Container>
                 <footer className="footerkun">©2022 Fukushima High School SS Club Jouhouhan</footer>
