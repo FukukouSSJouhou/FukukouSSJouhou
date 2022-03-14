@@ -142,7 +142,7 @@ class IndexPage extends React.Component {
                     </Row>
                     </Reveal>
                 </Container>
-                <footer className="footerkun">©2021 Fukushima High School SS Club Jouhouhan</footer>
+                <footer className="footerkun">©2022 Fukushima High School SS Club Jouhouhan</footer>
             </>
         );
     }
