@@ -1,9 +1,15 @@
 import * as React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Page404 from './pages/Page404';
 class App extends React.Component{
     public render():React.ReactNode{
         return(
             <>
-            App
+            <BrowserRouter>
+                <Routes>
+                    <Route path="*" element={<Page404 />} />
+                </Routes>
+            </BrowserRouter>
             </>
         );
     }
