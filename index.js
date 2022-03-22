@@ -99290,11 +99290,27 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+const material_1 = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/index.js");
 const React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const DrawerSetkun_1 = __importDefault(__webpack_require__(/*! ../components/DrawerSetkun */ "./src/components/DrawerSetkun.tsx"));
 function Page404() {
     return (React.createElement(DrawerSetkun_1.default, { title: "\u798F\u5CF6\u9AD8\u6821SS\u90E8\u60C5\u5831\u73ED" },
-        React.createElement("h1", null, "404 Not Found!")));
+        React.createElement("main", null,
+            React.createElement(material_1.Box, { sx: {
+                    bgcolor: 'background.paper',
+                    pt: 8,
+                    pb: 6,
+                } },
+                React.createElement(material_1.Container, { maxWidth: "sm" },
+                    React.createElement(material_1.Typography, { component: "h1", variant: "h2", align: "center", color: "text.primary", gutterBottom: true }, "404 NOT FOUND!"),
+                    React.createElement(material_1.Typography, { variant: "h5", align: "center", color: "text.secondary", paragraph: true },
+                        "\u304A\u63A2\u3057\u306E\u30DA\u30FC\u30B8\u306F\u898B\u3064\u304B\u308A\u307E\u305B\u3093\u3067\u3057\u305F\u3002",
+                        React.createElement("br", null),
+                        React.createElement("br", null),
+                        React.createElement("br", null),
+                        React.createElement(material_1.Link, { href: "/", underline: 'hover' },
+                            "\u30C8\u30C3\u30D7\u30DA\u30FC\u30B8 ",
+                            ">")))))));
 }
 exports["default"] = Page404;
 
