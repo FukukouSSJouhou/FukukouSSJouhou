@@ -99302,7 +99302,7 @@ function Page404() {
                     pb: 6,
                 } },
                 React.createElement(material_1.Container, { maxWidth: "sm" },
-                    React.createElement(material_1.Typography, { component: "h1", variant: "h2", align: "center", color: "text.primary", gutterBottom: true }, "404 NOT FOUND!"),
+                    React.createElement(material_1.Typography, { component: "h1", variant: "h2", align: "center", color: "text.primary", gutterBottom: true }, "404 NOT FOUND"),
                     React.createElement(material_1.Typography, { variant: "h5", align: "center", color: "text.secondary", paragraph: true },
                         "\u304A\u63A2\u3057\u306E\u30DA\u30FC\u30B8\u306F\u898B\u3064\u304B\u308A\u307E\u305B\u3093\u3067\u3057\u305F\u3002",
                         React.createElement("br", null),
