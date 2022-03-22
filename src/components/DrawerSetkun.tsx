@@ -41,7 +41,6 @@ export default function DrawerSetkun(props: Props): React.ReactElement {
     );
 
     const container = window !== undefined ? () => window().document.body : undefined;
-
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
