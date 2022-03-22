@@ -14,8 +14,8 @@ module.exports = {
     devtool: 'source-map',
     devServer: {
         port: 3000,
-        static: { directory: path.join(__dirname, 'public'), },
-        historyApiFallback: true
+        historyApiFallback: true,
+        static: { directory: path.join(__dirname, 'public'), }
     },
     module: {
         rules: [
@@ -38,6 +38,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: '404.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            filename: 'apps.html'
         }),
         new CopyWebpackPlugin(
             {

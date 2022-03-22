@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AppsPage from './pages/AppsPage';
 import IndexPage from './pages/IndexPage';
 import Page404 from './pages/Page404';
 class App extends React.Component{
@@ -8,8 +9,9 @@ class App extends React.Component{
             <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<IndexPage />}/>
-                    <Route path="/index.html" element={<IndexPage />}/>
+                    <Route path="/" element={<AppsPage />}/>
+                    <Route path="/index.html" element={<AppsPage />}/>
+                    <Route path="/apps.html" element={<AppsPage />}/>
                     <Route path="/404.html" element={<Page404 />} />
                     <Route path="*" element={<Page404 />} />
                 </Routes>
