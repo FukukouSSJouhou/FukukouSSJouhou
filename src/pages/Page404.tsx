@@ -23,7 +23,7 @@ export default function Page404():React.ReactElement {
               color="text.primary"
               gutterBottom
             >
-              404 NOT FOUND!
+              404 NOT FOUND
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
                 お探しのページは見つかりませんでした。<br /><br /><br />
