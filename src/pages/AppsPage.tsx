@@ -57,7 +57,7 @@ export default function AppsPage(): React.ReactElement {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Link underline="none" href="https://market.android.com/details?id=com.PLAMAR2">
+              <Link underline="none" target="_blank" rel="noopener noreferrer" href="https://market.android.com/details?id=com.PLAMAR2">
               <Button size="small" color="primary">
                 PLAY STORE
               </Button>
