@@ -43,6 +43,10 @@ module.exports = {
             template: './src/index.html',
             filename: 'apps.html'
         }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            filename: 'plamar.html'
+        }),
         new CopyWebpackPlugin(
             {
                 patterns:[
