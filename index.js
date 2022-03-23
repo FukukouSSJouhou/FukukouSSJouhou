@@ -99248,7 +99248,22 @@ function AppsPage() {
                     React.createElement(material_1.Typography, { variant: "h5", align: "center", color: "text.secondary", paragraph: true },
                         "\u73ED\u3067\u4F5C\u3063\u305F\u30A2\u30D7\u30EA\u30B1\u30FC\u30B7\u30E7\u30F3\u3067\u3059\u3002",
                         React.createElement("br", null),
-                        "\u4E0B\u306B\u4E00\u89A7\u304C\u3042\u308A\u307E\u3059\u3002"))))));
+                        "\u4E0B\u306B\u4E00\u89A7\u304C\u3042\u308A\u307E\u3059\u3002")))),
+        React.createElement(material_1.Box, { sx: {
+                bgcolor: 'background.paper',
+                pt: 8,
+                pb: 6,
+            } },
+            React.createElement(material_1.Container, { maxWidth: "sm" },
+                React.createElement(material_1.Card, { sx: { maxWidth: 500 } },
+                    React.createElement(material_1.CardActionArea, null,
+                        React.createElement(material_1.CardMedia, { component: "img", sx: { width: 151 }, image: "/images/plamar.png", alt: "green iguana" }),
+                        React.createElement(material_1.CardContent, null,
+                            React.createElement(material_1.Typography, { gutterBottom: true, variant: "h5", component: "div" }, "PLAMAR"),
+                            React.createElement(material_1.Typography, { variant: "body2", color: "text.secondary" }, "\u798F\u5CF6\u9AD8\u6821\u6821\u820E\u306E3D\u30DE\u30C3\u30D7\u3092AR\u8868\u793A\u3057\u305F\u308A\u3059\u308B\u30A2\u30D7\u30EA\u3067\u3059\u3002"))),
+                    React.createElement(material_1.CardActions, null,
+                        React.createElement(material_1.Link, { underline: "none", target: "_blank", rel: "noopener noreferrer", href: "https://market.android.com/details?id=com.PLAMAR2" },
+                            React.createElement(material_1.Button, { size: "small", color: "primary" }, "PLAY STORE"))))))));
 }
 exports["default"] = AppsPage;
 
