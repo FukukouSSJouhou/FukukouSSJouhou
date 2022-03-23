@@ -40,7 +40,9 @@ export default function AppsPage(): React.ReactElement {
       >
         <Container maxWidth="sm">
           <Card sx={{ maxWidth: 500 }} >
-            <CardActionArea>
+            <CardActionArea onClick={()=>{
+              window.open("/plamar.html")
+            }}>
               <CardMedia
                 component="img"
                 sx={{ width: 151 }}

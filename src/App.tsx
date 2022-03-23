@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AppsPage from './pages/AppsPage';
 import IndexPage from './pages/IndexPage';
 import Page404 from './pages/Page404';
+import PlamarPage from './pages/PlamarPage';
 class App extends React.Component{
     public render():React.ReactNode{
         return(
@@ -11,6 +12,7 @@ class App extends React.Component{
                 <Routes>
                     <Route path="/" element={<AppsPage />}/>
                     <Route path="/index.html" element={<AppsPage />}/>
+                    <Route path="/plamar.html" element={<PlamarPage />}/>
                     <Route path="/apps.html" element={<AppsPage />}/>
                     <Route path="/404.html" element={<Page404 />} />
                     <Route path="*" element={<Page404 />} />
