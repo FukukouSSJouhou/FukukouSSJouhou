@@ -10,8 +10,8 @@ class App extends React.Component{
             <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<AppsPage />}/>
-                    <Route path="/index.html" element={<AppsPage />}/>
+                    <Route path="/" element={<IndexPage />}/>
+                    <Route path="/index.html" element={<IndexPage />}/>
                     <Route path="/plamar.html" element={<PlamarPage />}/>
                     <Route path="/apps.html" element={<AppsPage />}/>
                     <Route path="/404.html" element={<Page404 />} />
