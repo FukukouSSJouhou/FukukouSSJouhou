@@ -99130,6 +99130,7 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 const AppsPage_1 = __importDefault(__webpack_require__(/*! ./pages/AppsPage */ "./src/pages/AppsPage.tsx"));
+const IndexPage_1 = __importDefault(__webpack_require__(/*! ./pages/IndexPage */ "./src/pages/IndexPage.tsx"));
 const Page404_1 = __importDefault(__webpack_require__(/*! ./pages/Page404 */ "./src/pages/Page404.tsx"));
 const PlamarPage_1 = __importDefault(__webpack_require__(/*! ./pages/PlamarPage */ "./src/pages/PlamarPage.tsx"));
 class App extends React.Component {
@@ -99137,8 +99138,8 @@ class App extends React.Component {
         return (React.createElement(React.Fragment, null,
             React.createElement(react_router_dom_1.BrowserRouter, null,
                 React.createElement(react_router_dom_1.Routes, null,
-                    React.createElement(react_router_dom_1.Route, { path: "/", element: React.createElement(AppsPage_1.default, null) }),
-                    React.createElement(react_router_dom_1.Route, { path: "/index.html", element: React.createElement(AppsPage_1.default, null) }),
+                    React.createElement(react_router_dom_1.Route, { path: "/", element: React.createElement(IndexPage_1.default, null) }),
+                    React.createElement(react_router_dom_1.Route, { path: "/index.html", element: React.createElement(IndexPage_1.default, null) }),
                     React.createElement(react_router_dom_1.Route, { path: "/plamar.html", element: React.createElement(PlamarPage_1.default, null) }),
                     React.createElement(react_router_dom_1.Route, { path: "/apps.html", element: React.createElement(AppsPage_1.default, null) }),
                     React.createElement(react_router_dom_1.Route, { path: "/404.html", element: React.createElement(Page404_1.default, null) }),
@@ -99355,6 +99356,104 @@ function AppsPage() {
                             React.createElement(material_1.Button, { size: "small", color: "primary" }, "PLAY STORE"))))))));
 }
 exports["default"] = AppsPage;
+
+
+/***/ }),
+
+/***/ "./src/pages/IndexPage.tsx":
+/*!*********************************!*\
+  !*** ./src/pages/IndexPage.tsx ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const material_1 = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/index.js");
+const React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const DrawerSetkun_1 = __importDefault(__webpack_require__(/*! ../components/DrawerSetkun */ "./src/components/DrawerSetkun.tsx"));
+const ItemList = [
+    React.createElement(React.Fragment, null,
+        React.createElement(material_1.Card, { sx: { maxWidth: 345 } },
+            React.createElement(material_1.CardActionArea, null,
+                React.createElement(material_1.CardMedia, { component: "img", height: "140", image: "images/1500x500.jpg", alt: "green iguana" }),
+                React.createElement(material_1.CardContent, null,
+                    React.createElement(material_1.Typography, { gutterBottom: true, variant: "h5", component: "div" }, "AI\u73ED"),
+                    React.createElement(material_1.Typography, { variant: "body2", color: "text.secondary" }, "AI\u73ED\u3067\u3059\u3002"))),
+            React.createElement(material_1.CardActions, null,
+                React.createElement(material_1.Button, { size: "small", color: "primary" }, "Share")))),
+    React.createElement(material_1.Card, { sx: { maxWidth: 345 } },
+        React.createElement(material_1.CardActionArea, null,
+            React.createElement(material_1.CardMedia, { component: "img", height: "140", image: "images/1500x500.jpg", alt: "green iguana" }),
+            React.createElement(material_1.CardContent, null,
+                React.createElement(material_1.Typography, { gutterBottom: true, variant: "h5", component: "div" }, "AR\u73ED"),
+                React.createElement(material_1.Typography, { variant: "body2", color: "text.secondary" }, "AR\u73ED\u3067\u3059\u3002"))),
+        React.createElement(material_1.CardActions, null,
+            React.createElement(material_1.Button, { size: "small", color: "primary" }, "Share"))),
+    React.createElement(material_1.Card, { sx: { maxWidth: 345 } },
+        React.createElement(material_1.CardActionArea, null,
+            React.createElement(material_1.CardMedia, { component: "img", height: "140", image: "images/1500x500.jpg", alt: "green iguana" }),
+            React.createElement(material_1.CardContent, null,
+                React.createElement(material_1.Typography, { gutterBottom: true, variant: "h5", component: "div" }, "\u30C9\u30ED\u30FC\u30F3\u73ED"),
+                React.createElement(material_1.Typography, { variant: "body2", color: "text.secondary" }, "\u30C9\u30ED\u30FC\u30F3\u73ED\u3067\u3059\u3002"))),
+        React.createElement(material_1.CardActions, null,
+            React.createElement(material_1.Button, { size: "small", color: "primary" }, "Share"))),
+    React.createElement(material_1.Card, { sx: { maxWidth: 345 } },
+        React.createElement(material_1.CardActionArea, null,
+            React.createElement(material_1.CardMedia, { component: "img", height: "140", image: "images/1500x500.jpg", alt: "green iguana" }),
+            React.createElement(material_1.CardContent, null,
+                React.createElement(material_1.Typography, { gutterBottom: true, variant: "h5", component: "div" }, "\u56F3\u66F8\u9928\u73ED"),
+                React.createElement(material_1.Typography, { variant: "body2", color: "text.secondary" }, "\u56F3\u66F8\u9928\u73ED\u3067\u3059\u3002"))),
+        React.createElement(material_1.CardActions, null,
+            React.createElement(material_1.Button, { size: "small", color: "primary" }, "Share")))
+];
+function IndexPage() {
+    return (React.createElement(DrawerSetkun_1.default, { title: "\u798F\u5CF6\u9AD8\u6821SS\u90E8\u60C5\u5831\u73ED" },
+        React.createElement("main", null,
+            React.createElement(material_1.Box, { sx: {
+                    bgcolor: '#d6d6d6',
+                    backgroundImage: "url(\"images/1500x500.jpg\")",
+                    pt: 8,
+                    pb: 6,
+                } },
+                React.createElement(material_1.Container, { maxWidth: "sm" },
+                    React.createElement(material_1.Typography, { component: "h1", variant: "h2", align: "center", color: "text.primary", gutterBottom: true }, "FukukouSSJouhou"),
+                    React.createElement(material_1.Typography, { variant: "h6", align: "center", color: "text.secondary", paragraph: true }, "\u798F\u5CF6\u9AD8\u6821SS\u90E8\u60C5\u5831\u73ED")))),
+        React.createElement(material_1.Box, { sx: {
+                bgcolor: 'background.paper',
+                pt: 8,
+                pb: 6,
+            } },
+            React.createElement(material_1.Container, { maxWidth: "sm" },
+                React.createElement(material_1.Grid, { container: true, spacing: { xs: 2, md: 3 }, columns: { xs: 4, sm: 8, md: 12 } }, Array.from(Array(6)).map((_, index) => (React.createElement(material_1.Grid, { item: true, xs: 6 }, ItemList[index]))))))));
+}
+exports["default"] = IndexPage;
 
 
 /***/ }),
