@@ -99131,6 +99131,7 @@ const React = __importStar(__webpack_require__(/*! react */ "./node_modules/reac
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
 const AppsPage_1 = __importDefault(__webpack_require__(/*! ./pages/AppsPage */ "./src/pages/AppsPage.tsx"));
 const Page404_1 = __importDefault(__webpack_require__(/*! ./pages/Page404 */ "./src/pages/Page404.tsx"));
+const PlamarPage_1 = __importDefault(__webpack_require__(/*! ./pages/PlamarPage */ "./src/pages/PlamarPage.tsx"));
 class App extends React.Component {
     render() {
         return (React.createElement(React.Fragment, null,
@@ -99138,6 +99139,7 @@ class App extends React.Component {
                 React.createElement(react_router_dom_1.Routes, null,
                     React.createElement(react_router_dom_1.Route, { path: "/", element: React.createElement(AppsPage_1.default, null) }),
                     React.createElement(react_router_dom_1.Route, { path: "/index.html", element: React.createElement(AppsPage_1.default, null) }),
+                    React.createElement(react_router_dom_1.Route, { path: "/plamar.html", element: React.createElement(PlamarPage_1.default, null) }),
                     React.createElement(react_router_dom_1.Route, { path: "/apps.html", element: React.createElement(AppsPage_1.default, null) }),
                     React.createElement(react_router_dom_1.Route, { path: "/404.html", element: React.createElement(Page404_1.default, null) }),
                     React.createElement(react_router_dom_1.Route, { path: "*", element: React.createElement(Page404_1.default, null) })))));
@@ -99341,7 +99343,9 @@ function AppsPage() {
             } },
             React.createElement(material_1.Container, { maxWidth: "sm" },
                 React.createElement(material_1.Card, { sx: { maxWidth: 500 } },
-                    React.createElement(material_1.CardActionArea, null,
+                    React.createElement(material_1.CardActionArea, { onClick: () => {
+                            window.open("/plamar.html");
+                        } },
                         React.createElement(material_1.CardMedia, { component: "img", sx: { width: 151 }, image: "/images/plamar.png", alt: "green iguana" }),
                         React.createElement(material_1.CardContent, null,
                             React.createElement(material_1.Typography, { gutterBottom: true, variant: "h5", component: "div" }, "PLAMAR"),
@@ -99413,6 +99417,77 @@ function Page404() {
                             ">")))))));
 }
 exports["default"] = Page404;
+
+
+/***/ }),
+
+/***/ "./src/pages/PlamarPage.tsx":
+/*!**********************************!*\
+  !*** ./src/pages/PlamarPage.tsx ***!
+  \**********************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    var desc = Object.getOwnPropertyDescriptor(m, k);
+    if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
+      desc = { enumerable: true, get: function() { return m[k]; } };
+    }
+    Object.defineProperty(o, k2, desc);
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const material_1 = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/index.js");
+const React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const DrawerSetkun_1 = __importDefault(__webpack_require__(/*! ../components/DrawerSetkun */ "./src/components/DrawerSetkun.tsx"));
+function PlamarPage() {
+    return (React.createElement(DrawerSetkun_1.default, { title: "\u798F\u5CF6\u9AD8\u6821SS\u90E8\u60C5\u5831\u73ED" },
+        React.createElement("main", null,
+            React.createElement(material_1.Box, { sx: {
+                    bgcolor: '#d6d6d6',
+                    pt: 8,
+                    pb: 6,
+                } },
+                React.createElement(material_1.Container, { maxWidth: "sm" },
+                    React.createElement(material_1.Typography, { component: "h1", variant: "h2", align: "center", color: "text.primary", gutterBottom: true }, "PLAMAR"),
+                    React.createElement(material_1.Typography, { variant: "h6", align: "center", color: "text.secondary", paragraph: true }, "\u798F\u5CF6\u9AD8\u6821\u6821\u820E\u306E3D\u30DE\u30C3\u30D7\u3092AR\u8868\u793A\u3059\u308B\u30A2\u30D7\u30EA\u3067\u3059\u3002")))),
+        React.createElement(material_1.Box, { sx: {
+                bgcolor: 'background.paper',
+                pt: 8,
+                pb: 6,
+            } },
+            React.createElement(material_1.Container, { maxWidth: "sm" },
+                React.createElement(material_1.Typography, { variant: "h5", align: "center", color: "text.secondary", paragraph: true },
+                    "\u7533\u3057\u8A33\u3054\u3056\u3044\u307E\u305B\u3093\u3002",
+                    React.createElement("br", null),
+                    "\u5F53\u30DA\u30FC\u30B8\u306F\u5DE5\u4E8B\u4E2D\u3067\u3059\u3002",
+                    React.createElement("br", null),
+                    React.createElement("br", null),
+                    React.createElement("br", null),
+                    React.createElement(material_1.Link, { href: "/", underline: 'hover' },
+                        "\u30C8\u30C3\u30D7\u30DA\u30FC\u30B8 ",
+                        ">"))))));
+}
+exports["default"] = PlamarPage;
 
 
 /***/ }),
