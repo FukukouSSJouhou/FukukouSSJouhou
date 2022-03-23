@@ -1,12 +1,102 @@
-import { Typography, Link, Box, Container, Grid } from '@mui/material';
+import { Typography, Link, Box, Container, Grid, Card, CardActionArea, CardMedia, CardContent, CardActions, Button } from '@mui/material';
 import * as React from 'react';
 import { useNavigate } from 'react-router';
 import DrawerSetkun from '../components/DrawerSetkun';
 const ItemList:Array<React.ReactElement>=[
     <>
-        
+        <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image= "images/1500x500.jpg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            AI班
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+              AI班です。
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
+    </Card>
     </>,
-    <>tintin</>
+    <Card sx={{ maxWidth: 345 }}>
+    <CardActionArea>
+      <CardMedia
+        component="img"
+        height="140"
+        image= "images/1500x500.jpg"
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          AR班
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+            AR班です。
+        </Typography>
+      </CardContent>
+    </CardActionArea>
+    <CardActions>
+      <Button size="small" color="primary">
+        Share
+      </Button>
+    </CardActions>
+  </Card>,
+    <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image= "images/1500x500.jpg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            ドローン班
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+              ドローン班です。
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+      </CardActions>
+    </Card>,
+    <Card sx={{ maxWidth: 345 }}>
+    <CardActionArea>
+      <CardMedia
+        component="img"
+        height="140"
+        image= "images/1500x500.jpg"
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          図書館班
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        図書館班です。
+        </Typography>
+      </CardContent>
+    </CardActionArea>
+    <CardActions>
+      <Button size="small" color="primary">
+        Share
+      </Button>
+    </CardActions>
+  </Card>
 ];
 export default function IndexPage(): React.ReactElement {
     return (
@@ -47,7 +137,7 @@ export default function IndexPage(): React.ReactElement {
                 <Container maxWidth="sm">
                     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                         {Array.from(Array(6)).map((_, index) => (
-                            <Grid item xs={2} sm={4} md={4} key={index}>
+                            <Grid item xs={6}>
                                 {ItemList[index]}
                             </Grid>
                         ))}
