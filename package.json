@@ -16,7 +16,7 @@
     "webpack-dev-server": "^4.7.4"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack  --progress --color",
     "start": "cross-env NODE_ENV=\"development\" webpack-dev-server"
   },
   "dependencies": {
