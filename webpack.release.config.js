@@ -8,6 +8,8 @@ module.exports = {
     {
         "index":"./src/index_index.tsx",
         "404":"./src/404.tsx",
+        "apps":"./src/apps.tsx",
+        "plamar":"./src/plamar.tsx",
     },
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -53,6 +55,16 @@ module.exports = {
             template: './src/index.html',
             chunks: ['404','vendor'],
             filename: '404.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['apps','vendor'],
+            filename: 'apps.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['plamar','vendor'],
+            filename: 'plamar.html'
         }),
         new CopyWebpackPlugin(
             {
