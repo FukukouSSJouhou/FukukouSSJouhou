@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server"
+    "start": "cross-env NODE_ENV=\"development\" webpack-dev-server"
   },
   "dependencies": {
     "@emotion/react": "^11.8.2",
