@@ -1,8 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
-    mode: "development",
+    mode: isDev ? 'development' : 'production',
     entry: "./src/index.tsx",
     output: {
         path: path.resolve(__dirname, 'build'),
