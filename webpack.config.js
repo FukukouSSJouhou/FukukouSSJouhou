@@ -12,7 +12,8 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.json', '.ts', '.tsx']
     },
-    devtool: 'source-map',
+    watch: isDev,
+    devtool: isDev ? 'source-map' : undefined,
     devServer: {
         port: 3000,
         historyApiFallback: true,
