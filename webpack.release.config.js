@@ -38,6 +38,12 @@ module.exports = {
                     name: 'react',
                     chunks: 'all',
                 },
+                mui:{
+                    
+                    test: /@mui/,
+                    name: 'mui',
+                    chunks: 'all',
+                }
             }
         }
     },
