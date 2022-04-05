@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
       "target": "ES2015",
-      "module": "commonjs",
+      "module": "esnext",
       "lib": ["esnext", "dom"],
+      "moduleResolution": "node",
       "jsx": "react",
       "strict": true,
       "esModuleInterop": true,
