@@ -1,19 +1,22 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const isDev = process.env.NODE_ENV === 'development';
+const isReleaseCheckSize = process.env.CHECKSIZE === 'true';
 module.exports = {
     mode: isDev ? 'development' : 'production',
-    entry: 
+    entry:
     {
-        "index":"./src/index_index.tsx",
-        "404":"./src/404.tsx",
-        "apps":"./src/apps.tsx",
-        "plamar":"./src/plamar.tsx",
+        "index": "./src/index_index.tsx",
+        "404": "./src/404.tsx",
+        "apps": "./src/apps.tsx",
+        "plamar": "./src/plamar.tsx",
     },
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: "[name].bundle.js"
+        filename: "[name].bundle.js",
+        sourceMapFilename: '[file].map',
     },
     resolve: {
         extensions: ['.js', '.json', '.ts', '.tsx']
@@ -27,8 +30,21 @@ module.exports = {
     },
     optimization: {
         splitChunks: {
-          name: 'vendor',
-          chunks: 'initial',
+            name: 'vendor',
+            chunks: 'initial',
+            cacheGroups: {
+                react: {
+                    test: /react/,
+                    name: 'react',
+                    chunks: 'all',
+                },
+                mui:{
+                    
+                    test: /@mui/,
+                    name: 'mui',
+                    chunks: 'all',
+                }
+            }
         }
     },
     module: {
@@ -45,33 +61,64 @@ module.exports = {
             },
         ]
     },
-    plugins: [
+    plugins: isReleaseCheckSize ? [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            chunks: ['index','vendor'],
+            chunks: ['index', 'vendor'],
             filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            chunks: ['404','vendor'],
+            chunks: ['404', 'vendor'],
             filename: '404.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            chunks: ['apps','vendor'],
+            chunks: ['apps', 'vendor'],
             filename: 'apps.html'
         }),
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            chunks: ['plamar','vendor'],
+            chunks: ['plamar', 'vendor'],
             filename: 'plamar.html'
         }),
         new CopyWebpackPlugin(
             {
-                patterns:[
-                    {from:"public",to:"./"}
+                patterns: [
+                    { from: "public", to: "./" }
                 ]
             }
-        )
+        ),
+
+        new BundleAnalyzerPlugin()
+    ] : [
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['index', 'vendor'],
+            filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['404', 'vendor'],
+            filename: '404.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['apps', 'vendor'],
+            filename: 'apps.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['plamar', 'vendor'],
+            filename: 'plamar.html'
+        }),
+        new CopyWebpackPlugin(
+            {
+                patterns: [
+                    { from: "public", to: "./" }
+                ]
+            }
+        ),
+
     ],
 }
