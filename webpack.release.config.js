@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const isDev = process.env.NODE_ENV === 'development';
+const isReleaseCheckSize = process.env.CHECKSIZE === 'true';
 module.exports = {
     mode: isDev ? 'development' : 'production',
     entry: 
@@ -47,7 +48,7 @@ module.exports = {
             },
         ]
     },
-    plugins: [
+    plugins: isReleaseCheckSize ? [
         new HtmlWebpackPlugin({
             template: './src/index.html',
             chunks: ['index','vendor'],
@@ -75,5 +76,36 @@ module.exports = {
                 ]
             }
         ),
+        
+        new BundleAnalyzerPlugin() 
+    ]:[
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['index','vendor'],
+            filename: 'index.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['404','vendor'],
+            filename: '404.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['apps','vendor'],
+            filename: 'apps.html'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/index.html',
+            chunks: ['plamar','vendor'],
+            filename: 'plamar.html'
+        }),
+        new CopyWebpackPlugin(
+            {
+                patterns:[
+                    {from:"public",to:"./"}
+                ]
+            }
+        ),
+
     ],
 }
