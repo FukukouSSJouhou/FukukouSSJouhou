@@ -18,8 +18,19 @@
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
   },
+  "reactSnap": {
+    "source": "build",
+    "include":[
+      "/index.html",
+      "/apps.html",
+      "/plamar.html",
+      "/404.html"
+    ],
+    "crawl":false
+  },
   "scripts": {
-    "build": "webpack -c webpack.release.config.js  --progress --color",
+    "react-build": "webpack -c webpack.release.config.js  --progress --color",
+    "build": "yarn react-build && yarn react-snap",
     "start": "cross-env NODE_ENV=\"development\"  webpack-dev-server -c webpack.dev.config.js"
   },
   "dependencies": {
