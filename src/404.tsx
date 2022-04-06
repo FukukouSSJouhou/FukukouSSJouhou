@@ -1,8 +1,11 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
+import React from "react";
+import { hydrate, render } from "react-dom";
 import Page404 from './pages/Page404';
-ReactDom.render(
-    <React.StrictMode>
-        <Page404 />
-    </React.StrictMode>
-    , document.getElementById('root'));
+
+const rootElement = document.getElementById("root");
+if(rootElement)
+if (rootElement.hasChildNodes()) {
+  hydrate(<Page404 />, rootElement);
+} else {
+  render(<Page404 />, rootElement);
+}
