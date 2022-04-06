@@ -1,8 +1,11 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
+import React from "react";
+import { hydrate, render } from "react-dom";
+const rootElement = document.getElementById("root");
 import IndexPage from './pages/IndexPage';
-ReactDom.render(
-    <React.StrictMode>
-        <IndexPage />
-    </React.StrictMode>
-    , document.getElementById('root'));
+
+if(rootElement)
+if (rootElement.hasChildNodes()) {
+  hydrate(<IndexPage />, rootElement);
+} else {
+  render(<IndexPage />, rootElement);
+}

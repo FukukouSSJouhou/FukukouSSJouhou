@@ -1,8 +1,11 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
+import React from "react";
+import { hydrate, render } from "react-dom";
 import PlamarPage from './pages/PlamarPage';
-ReactDom.render(
-    <React.StrictMode>
-        <PlamarPage />
-    </React.StrictMode>
-    , document.getElementById('root'));
+
+const rootElement = document.getElementById("root");
+if(rootElement)
+if (rootElement.hasChildNodes()) {
+  hydrate(<PlamarPage />, rootElement);
+} else {
+  render(<PlamarPage />, rootElement);
+}
