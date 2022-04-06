@@ -1,8 +1,10 @@
-import * as React from 'react';
-import * as ReactDom from 'react-dom';
+import React from "react";
+import { hydrate, render } from "react-dom";
 import AppsPage from './pages/AppsPage';
-ReactDom.render(
-    <React.StrictMode>
-        <AppsPage />
-    </React.StrictMode>
-    , document.getElementById('root'));
+const rootElement = document.getElementById("root");
+if(rootElement)
+if (rootElement.hasChildNodes()) {
+  hydrate(<AppsPage />, rootElement);
+} else {
+  render(<AppsPage />, rootElement);
+}
