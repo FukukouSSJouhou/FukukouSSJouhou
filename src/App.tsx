@@ -4,10 +4,10 @@ import AppsPage from './pages/AppsPage';
 import IndexPage from './pages/IndexPage';
 import Page404 from './pages/Page404';
 import PlamarPage from './pages/PlamarPage';
+
 class App extends React.Component{
     public render():React.ReactNode{
         return(
-            <>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<IndexPage />}/>
@@ -18,7 +18,6 @@ class App extends React.Component{
                     <Route path="*" element={<Page404 />} />
                 </Routes>
             </BrowserRouter>
-            </>
         );
     }
 }
