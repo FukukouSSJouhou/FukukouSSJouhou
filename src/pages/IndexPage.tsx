@@ -3,6 +3,7 @@ import * as React from 'react';
 import { useNavigate } from 'react-router';
 import DrawerSetkun from '../components/DrawerSetkun';
 const ItemList:Array<React.ReactElement>=[
+  /*
     <>
         <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
@@ -74,6 +75,7 @@ const ItemList:Array<React.ReactElement>=[
         </Button>
       </CardActions>
     </Card>,
+    */
     <Card sx={{ maxWidth: 345 }}>
     <CardActionArea>
       <CardMedia
