@@ -8,7 +8,6 @@ const ItemList: Array<React.ReactElement> = [
             <CardMedia
                 component="img"
                 height="140"
-                image="images/1500x500.webp"
                 alt="green iguana"
             />
             <CardContent>
@@ -35,7 +34,6 @@ export default function IndexPage(): React.ReactElement {
                 <Box
                     sx={{
                         bgcolor: '#d6d6d6',
-                        backgroundImage: "url(\"images/1500x500.webp\")",
                         pt: 8,
                         pb: 6,
                     }}
