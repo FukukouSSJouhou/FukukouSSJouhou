@@ -7,24 +7,15 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from '@mui/material';
 
-//const pages = ['Products', 'Pricing', 'Blog'];
-interface PagesIF{
-    name:string;
-    url:string;
-}
-const pages:Array<Array<string>>=[
-    ["home","/"],
-    ["Apps","/apps.html"],
+const pages: Array<Array<string>> = [
+    ["home", "/"],
+    ["Apps", "/apps.html"],
 ]
 
-
-const drawerWidth = 240;
 export interface Props {
     children?: React.ReactNode;
     id?: string;
@@ -39,17 +30,16 @@ export default function DrawerSetkun(props: Props): React.ReactElement {
         setAnchorElNav(event.currentTarget);
     };
 
-
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
-      };
+    };
 
     return (
         <>
             <AppBar position="static">
                 <Container maxWidth="xl">
                     <Toolbar disableGutters>
-                        <Link underline="none" 
+                        <Link underline="none"
                             variant="h6"
                             noWrap style={{ color: "white" }}
                             href="/"
@@ -57,45 +47,45 @@ export default function DrawerSetkun(props: Props): React.ReactElement {
                         >
                             {props.title}
                         </Link>
-                        
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem>
-                <Link href={page[1]} underline="none"  >
-                  <Typography textAlign="center">{page[0]}</Typography>
-                </Link>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+
+                        <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                            <IconButton
+                                size="large"
+                                aria-label="account of current user"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                onClick={handleOpenNavMenu}
+                                color="inherit"
+                            >
+                                <MenuIcon />
+                            </IconButton>
+                            <Menu
+                                id="menu-appbar"
+                                anchorEl={anchorElNav}
+                                anchorOrigin={{
+                                    vertical: 'bottom',
+                                    horizontal: 'left',
+                                }}
+                                keepMounted
+                                transformOrigin={{
+                                    vertical: 'top',
+                                    horizontal: 'left',
+                                }}
+                                open={Boolean(anchorElNav)}
+                                onClose={handleCloseNavMenu}
+                                sx={{
+                                    display: { xs: 'block', md: 'none' },
+                                }}
+                            >
+                                {pages.map((page) => (
+                                    <MenuItem>
+                                        <Link href={page[1]} underline="none"  >
+                                            <Typography textAlign="center">{page[0]}</Typography>
+                                        </Link>
+                                    </MenuItem>
+                                ))}
+                            </Menu>
+                        </Box>
                         <Typography
                             variant="h6"
                             noWrap
@@ -106,16 +96,16 @@ export default function DrawerSetkun(props: Props): React.ReactElement {
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                             {pages.map((page) => (
-                                <Link href={page[1]} style={{color:"white"}} underline="none" >
-                                <Button
-                                    key={page[0]}
-                                    onClick={ handleCloseNavMenu}
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >
-                                    
-                                    {page[0]}
-                                </Button>
-                                    </Link>
+                                <Link href={page[1]} style={{ color: "white" }} underline="none" >
+                                    <Button
+                                        key={page[0]}
+                                        onClick={handleCloseNavMenu}
+                                        sx={{ my: 2, color: 'white', display: 'block' }}
+                                    >
+
+                                        {page[0]}
+                                    </Button>
+                                </Link>
                             ))}
                         </Box>
                     </Toolbar>

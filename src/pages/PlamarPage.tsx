@@ -1,11 +1,11 @@
-import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Link, Paper, Stack, Typography } from "@mui/material";
+import { Box, Container, Link, Typography } from "@mui/material";
 import * as React from "react";
 import DrawerSetkun from '../components/DrawerSetkun';
+
 export default function PlamarPage(): React.ReactElement {
     return (
         <DrawerSetkun title="福島高校SS部情報班">
             <main>
-                {/* Hero unit */}
                 <Box
                     sx={{
                         bgcolor: '#d6d6d6',
@@ -37,12 +37,13 @@ export default function PlamarPage(): React.ReactElement {
                 }}
             >
                 <Container maxWidth="sm">
-                        <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                            申し訳ございません。<br />
+                    <Typography variant="h5" align="center" color="text.secondary" paragraph>
+                        申し訳ございません。<br />
                         当ページは工事中です。<br /><br /><br />
-                            <Link href="/" underline='hover'>トップページ {">"}</Link>
-                        </Typography>
+                        <Link href="/" underline='hover'>トップページ {">"}</Link>
+                    </Typography>
                 </Container>
             </Box>
-        </DrawerSetkun>);
+        </DrawerSetkun>
+    );
 }
