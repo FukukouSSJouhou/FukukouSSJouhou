@@ -9,7 +9,6 @@ export default function AppsPage(): React.ReactElement {
                 <Box
                     sx={{
                         bgcolor: 'background.paper',
-                        backgroundImage: "url(\"images/1500x500.webp\")",
                         pt: 8,
                         pb: 6,
                     }}
